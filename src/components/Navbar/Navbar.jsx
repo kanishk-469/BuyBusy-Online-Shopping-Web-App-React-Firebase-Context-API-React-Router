@@ -13,7 +13,10 @@ function Navbar({ isLoggedIn, setIsLoggedIn, users }) {
         <ul className={style.navItems}>
           <NavLink to="/">
             <li className={style.navItem}>
-              <img src="../../../src/assets/Icons/home.png" alt="home" />
+              <img
+                src={`${import.meta.env.BASE_URL}icons/home.png`}
+                alt="home"
+              />
               <span>Home</span>
             </li>
           </NavLink>
@@ -21,7 +24,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn, users }) {
             <NavLink to={`/myorders/${users[0].id}`}>
               <li className={style.navItem}>
                 <img
-                  src="../../../src/assets/Icons/myOrder.png"
+                  src={`${import.meta.env.BASE_URL}icons/myOrder.png`}
                   alt="myorder"
                 />
                 <span>My orders</span>
@@ -31,7 +34,10 @@ function Navbar({ isLoggedIn, setIsLoggedIn, users }) {
           {isLoggedIn && (
             <NavLink to="/cart">
               <li className={style.navItem}>
-                <img src="../../../src/assets/Icons/cart.png" alt="cart" />
+                <img
+                  src={`${import.meta.env.BASE_URL}icons/cart.png`}
+                  alt="cart"
+                />
                 <span>Cart</span>
               </li>
             </NavLink>
@@ -40,14 +46,20 @@ function Navbar({ isLoggedIn, setIsLoggedIn, users }) {
           {isLoggedIn ? (
             <NavLink to="/signin">
               <li className={style.navItem} onClick={handleLogout}>
-                <img src="../../../src/assets/Icons/logout.png" alt="logout" />
+                <img
+                  src={`${import.meta.env.BASE_URL}icons/logout.png`}
+                  alt="logout"
+                />
                 <span>Logout</span>
               </li>
             </NavLink>
           ) : (
             <NavLink to="/signin">
               <li className={style.navItem}>
-                <img src="../../../src/assets/Icons/login.png" alt="login" />
+                <img
+                  src={`${import.meta.env.BASE_URL}icons/login.png`}
+                  alt="login"
+                />
                 <span>Login</span>
               </li>
             </NavLink>
