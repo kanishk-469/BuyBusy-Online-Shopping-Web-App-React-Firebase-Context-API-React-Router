@@ -1,0 +1,66 @@
+.tableContainer {
+  margin: 20px auto;
+  padding: 16px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+.date {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Header */
+.table thead {
+  background-color: #f5f5f5;
+}
+
+.table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+}
+
+/* Body rows */
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* Footer (total row) */
+.table tfoot {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.table tfoot td {
+  padding: 12px;
+  border-top: 2px solid #000;
+}
+
+/* Align prices to the right for clarity */
+.table td:nth-child(2),
+.table td:nth-child(3),
+.table td:nth-child(4),
+.table th:nth-child(2),
+.table th:nth-child(3),
+.table th:nth-child(4),
+.table tfoot td:last-child {
+  text-align: right;
+}

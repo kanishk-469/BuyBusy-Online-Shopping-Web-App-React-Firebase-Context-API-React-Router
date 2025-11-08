@@ -1,0 +1,94 @@
+.container {
+  background-color: #f0f0fc;
+  width: 250px;
+  height: auto;
+  position: fixed;
+  top: 210px;
+  left: 0;
+  overflow-y: auto; /* allow filter itself to scroll if content exceeds */
+  padding: 20px;
+  z-index: 9;
+  border-radius: 9px;
+  /* box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.4); */
+}
+
+.filterContainer {
+  /* background-color: #f0f0fc; */
+  position: sticky; /* keeps filter header visible */
+  top: 0;
+  padding-bottom: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterHeading {
+  font-size: 25px;
+  font-weight: 800;
+  color: #6e62e2;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+/* .priceSlider > input {
+  width: 100%;
+} */
+
+.priceSlider input[type="range"] {
+  width: 100%;
+}
+
+.priceSlider {
+  /* background-color: rgb(172, 128, 128); */
+  width: 100%;
+}
+
+.categoryContainer {
+  /* background-color: rgb(216, 133, 133); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.categoryHeading {
+  font-size: 25px;
+  font-weight: 800;
+  color: #6e62e2;
+  margin-bottom: 15px;
+}
+
+.categoryItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  /* background-color: #6e62e2; */
+  letter-spacing: 1px;
+}
+
+.categoryItems > div > input {
+  margin-right: 0px;
+  width: 20px;
+  height: 16px;
+}
+
+.categoryItems > div > span {
+  font-size: 18px;
+}
+
+.purchaseBtn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #6e62e2;
+  color: #f0f0fc;
+  border: none;
+  cursor: pointer;
+}

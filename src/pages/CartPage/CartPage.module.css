@@ -1,0 +1,134 @@
+.container {
+  /* background-color: rgb(192, 160, 160); */
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.searchContainer {
+  margin-top: 30px;
+}
+
+.searchInput {
+  font-size: 19px;
+  padding: 10px 90px 10px 8px;
+  border-radius: 10px;
+  border: 1px solid #6e62e2;
+  background-color: #f5f6f8;
+}
+.productContainer {
+  /* background-color: #6e62e2; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75vw;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.productCardContainer {
+  /* background-color: rgb(140, 140, 220); */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: auto; */
+  border-radius: 5px;
+  padding: 10px 10px;
+  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.4);
+
+  /* -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.productImage {
+  width: 150px;
+  /* object-fit: cover; */
+  /* margin: 10px 0px 10px 0px; */
+}
+.productCard {
+  /* background-color: #1d1b2b; */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  /* flex-wrap: wrap; */
+  /* margin: 10px 0px 10px 0px; */
+}
+
+.productName {
+  /* background-color: red; */
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+
+  /* width: 10em; */
+  /* margin: 10px 0px 10px 0px; */
+}
+
+.productPrice {
+  /* background-color: #f14544; */
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  gap: 30px;
+  /* margin: 10px 0px 10px 0px; */
+}
+/* .productPrice::before {
+  content: "₹";
+  font-size: 25px;
+  font-weight: 900;
+  margin-right: 2px;
+
+  /* margin: 10px 0px 10px 0px; */
+/*} */
+
+.productQuantity {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.productQuantity span:first-child {
+  padding-left: 6px;
+  padding-top: -1px;
+
+  cursor: pointer;
+  width: 20px;
+  background-color: #000000;
+
+  color: #f0f0fc;
+  border-radius: 20px;
+}
+.productQuantity span:last-child {
+  padding-left: 4px;
+  padding-top: -1px;
+  cursor: pointer;
+  width: 20px;
+  background-color: #000000;
+  color: #f0f0fc;
+  border-radius: 20px;
+}
+.removeFromCartBtn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 60px;
+  border: none;
+  background-color: #f14544;
+  color: white;
+  cursor: pointer;
+}
